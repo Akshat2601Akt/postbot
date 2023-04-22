@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:postbot/util/networking.dart';
+import 'package:provider/provider.dart';
 
 class DropDownSelector extends StatefulWidget {
   final String label;
@@ -12,13 +14,13 @@ class DropDownSelector extends StatefulWidget {
 }
 
 class _DropDownSelectorState extends State<DropDownSelector> {
-  String selectedItems = '';
+  String selectedItem = '';
 
   @override
   void initState() {
     // TODO: implement initState
     super.initState();
-    selectedItems = widget.selectedItem.toString();
+    selectedItem = widget.selectedItem.toString();
   }
 
   @override
@@ -50,7 +52,7 @@ class _DropDownSelectorState extends State<DropDownSelector> {
             child: Padding(
               padding: const EdgeInsets.only(left: 20.0, right: 10.0),
               child: DropdownButton<String>(
-                  value: selectedItems,
+                  value: selectedItem,
                   underline: const SizedBox(),
                   isExpanded: true,
                   dropdownColor: Colors.white,
@@ -72,7 +74,8 @@ class _DropDownSelectorState extends State<DropDownSelector> {
                     },
                   ).toList(),
                   onChanged: (String? newValue) => setState(() {
-                    selectedItems = newValue!;
+                    selectedItem = newValue!;
+                    Provider.of<PostData>(context, listen: false).setPlatform(selectedItem);
                   })),
             ),
           ),

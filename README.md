@@ -1,16 +1,5 @@
-# postbot
+# Post Bot
 
-A new Flutter project.
+#### A Flutter Application that generates post captions for social media platforms using AI
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<img src='https://user-images.githubusercontent.com/92688870/232516329-af946c03-498c-4046-9754-ae60de6efbb4.png' width='300'/>    <img src='https://user-images.githubusercontent.com/92688870/232516560-98f33787-e714-4dd8-a3df-53d576dee326.png' width='300'/> <img src='https://user-images.githubusercontent.com/92688870/232515197-af467ea7-7ed4-432f-af9d-80a368af0ec9.png' width='300'/>    <img src='https://user-images.githubusercontent.com/92688870/232517821-9d0d59db-6b52-4e95-818e-40e6cd06ea9a.png' width='300'/>
